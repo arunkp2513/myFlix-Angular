@@ -14,7 +14,7 @@ const apiUrl = 'https://myflix2513.herokuapp.com/';
 //get token
 const token = localStorage.getItem('token');
 //get username stored in local storage
-const username = localStorage.getItem('username');
+const username = localStorage.getItem('Username');
 
 @Injectable({
   providedIn: 'root',
