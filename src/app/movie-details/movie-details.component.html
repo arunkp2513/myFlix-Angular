@@ -1,0 +1,28 @@
+<div class="details-wrapper">
+  <div class="details-content">
+    <div class="details-image">
+      <img src="{{ data.ImagePath }}" alt="movie image" />
+    </div>
+    <div class="details-right">
+      <div class="header">
+        <h3 class="bolded">{{ data.Title }}</h3>
+        <p>{{ data.Network }}</p>
+      </div>
+      <p class="bolded" *ngIf="data.Director.Name">
+        Director: {{ data.Director.Name }}
+      </p>
+      <p class="bolded" *ngIf="data.Genre.Name">Genre: {{ data.Genre.Name }}</p>
+
+      <p class="bolded">Summary:</p>
+      <p>{{ data.Description }}</p>
+
+      <p class="bolded">Actors:</p>
+      <p>{{ data.Actors }}</p>
+    </div>
+  </div>
+  <div class="close-modal">
+    <button mat-raised-button (click)="closeDialog()" color="primary">
+      Close
+    </button>
+  </div>
+</div>
